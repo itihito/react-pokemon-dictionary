@@ -1,0 +1,50 @@
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.sidebar {
+  margin: 20px 20px 10px 10px;
+  width: 250px;
+  background-color: #92abee;
+  border-radius: 10px;
+  height: 600px;
+  position: sticky;
+  top: 0;
+  box-shadow: 4px 9px 19px -2px #777777;
+}
+
+.sidebar-no h3 {
+  font-size: 20px;
+  padding-top: 0;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.sidebar ul {
+  margin-top: 5px;
+}
+
+.pageJumpBtn {
+  border: none;
+  width: 200px;
+  height: 35px;
+  font-size: 16px;
+  font-weight: 550;
+  background-color: white;
+  margin: 7px;
+  border-radius: 10px;
+  text-align: left;
+  padding-left: 40px;
+  transition: all 0.3s;
+  box-shadow: 5px 5px 10px -5px #4f4f4f;
+}
+
+.pageJumpBtn:hover {
+  background-color: rgb(199, 199, 199);
+  transform: translateY(3px);
+  box-shadow: none;
+}

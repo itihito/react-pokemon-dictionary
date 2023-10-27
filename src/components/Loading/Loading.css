@@ -1,0 +1,32 @@
+.load-text {
+  color: black;
+  font-size: 16pt;
+}
+
+.load-blink {
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.load-blink-dot {
+  animation: blink-dot 1.2s linear infinite;
+  opacity: 0;
+}
+
+@keyframes blink-dot {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
