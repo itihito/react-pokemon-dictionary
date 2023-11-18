@@ -1,7 +1,7 @@
 export const getAllPokemon = async (url) => {
   try {
     const response = await fetch(url);
-    const resJson = response.json();
+    const resJson = await response.json();
     return resJson;
   } catch (err) {
     console.log(err);
@@ -11,7 +11,7 @@ export const getAllPokemon = async (url) => {
 export const getPokemon = async (url) => {
   try {
     const response = await fetch(url);
-    return response.json();
+    return await response.json();
   } catch (err) {
     console.log(err);
   }
@@ -66,11 +66,3 @@ export const getPokemonAbilities = async (abilityURLs) => {
     console.log(err);
   }
 };
-
-// export const getAllPokemon = (url) => {
-//   return new Promise((resolve, reject) => {
-//     fetch(url)
-//       .then((res) => res.json())
-//       .then((data) => resolve(data));
-//   });
-// };
